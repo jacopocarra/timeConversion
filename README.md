@@ -8,5 +8,13 @@ It downloads automatically the table of leap seconds from "https://maia.usno.nav
 jd = 2459917.5
 fr = 0.53197969
 diff = convFromUTCtoUT1(jd, fr)
-print(diff)
+diff = -0.0208342
+~~~
+# Example UTCGPS
+~~~
+jd = 2459917.5
+fr = 0.53197969
+jd = jd+fr
+diff = convFromUTCtoGPS(jd)
+diff = 18
 ~~~
